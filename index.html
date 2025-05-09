@@ -1476,6 +1476,7 @@
             </div>
           </div>
         </div>
+
         <!-- Item 6 -->
         <div
           class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
@@ -1506,6 +1507,7 @@
             </div>
           </div>
         </div>
+
         <!-- Item 7 -->
         <div
           class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
@@ -1536,6 +1538,7 @@
             </div>
           </div>
         </div>
+
         <!-- Item 8 -->
         <div
           class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
@@ -1568,38 +1571,528 @@
         </div>
       </div>
     </div>
+
+    <!-- Demo Sale Discount -->
+    <div class="sale_discount">
+      <div class="title py-28">
+        <h2 class="text-3xl font-bold text-center mb-2">Sale</h2>
+        <p class="text-center text-sm text-gray-500 mb-6">Sale Discount 50%</p>
+      </div>
+      <div class="max-w-6xl mx-auto px-4 py-8">
+        <!-- Tabs -->
+        <div
+          class="flex justify-center space-x-6 mb-6 text-xl font-extrabold uppercase"
+        >
+          <!-- Tab All (default active) -->
+          <button
+            class="tab-btn text-black border-b-2 border-black hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-purple-600 hover:via-indigo-500 hover:to-purple-800 hover:border-purple-600"
+            data-tab="all"
+          >
+            All
+          </button>
+
+          <!-- Tab Sale -->
+          <button
+            class="tab-btn text-gray-500 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-purple-600 hover:via-indigo-500 hover:to-purple-800 hover:border-b-2 hover:border-purple-600"
+            data-tab="sale"
+          >
+            Sale
+          </button>
+
+          <!-- Tab Best -->
+          <button
+            class="tab-btn text-gray-500 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-purple-600 hover:via-indigo-500 hover:to-purple-800 hover:border-b-2 hover:border-purple-600"
+            data-tab="best"
+          >
+            Best
+          </button>
+
+          <!-- Tab New -->
+          <button
+            class="tab-btn text-gray-500 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-purple-600 hover:via-indigo-500 hover:to-purple-800 hover:border-b-2 hover:border-purple-600"
+            data-tab="new"
+          >
+            New
+          </button>
+        </div>
+
+        <!-- Items -->
+        <div
+          id="product-grid"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+        >
+          <!-- All -->
+          <!-- Item 1 -->
+          <div
+            class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 product-item"
+            data-category="all sale"
+          >
+            <div class="relative aspect-square w-full">
+              <img
+                src="/img/products/shoe19_600x.jpg"
+                alt="Bast Shoe"
+                class="absolute inset-0 w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
+              />
+              <img
+                src="/img/products/shoe20_600x.jpg"
+                alt="Bast Shoe Hover"
+                class="absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              />
+            </div>
+            <div class="border-t border-gray-200 my-3"></div>
+            <div class="text-center px-3 pb-4">
+              <h3 class="font-semibold text-sm uppercase">Bast Shoe</h3>
+              <div class="flex justify-between items-center mt-2">
+                <span class="text-lg font-bold">$106.00</span>
+                <button
+                  class="bg-gray-900 hover:bg-gradient-to-r hover:from-purple-700 hover:via-indigo-600 hover:to-purple-800 active:scale-95 text-white p-3 rounded-full shadow-md transition-all duration-300"
+                >
+                  <i class="fa-solid fa-cart-shopping text-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div
+            class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 product-item"
+            data-category="all best"
+          >
+            <div class="relative aspect-square w-full">
+              <img
+                src="/img/products/shoe17_600x.jpg"
+                alt="Court Shoe"
+                class="absolute inset-0 w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
+              />
+              <img
+                src="/img/products/shoe18_600x.jpg"
+                alt="Court Shoe Hover"
+                class="absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              />
+            </div>
+            <div class="border-t border-gray-200 my-3"></div>
+            <div class="text-center px-3 pb-4">
+              <h3 class="font-semibold text-sm uppercase">Court Shoe</h3>
+              <div class="flex justify-between items-center mt-2">
+                <span class="text-lg font-bold">$478.00</span>
+                <button
+                  class="bg-gray-900 hover:bg-gradient-to-r hover:from-purple-700 hover:via-indigo-600 hover:to-purple-800 active:scale-95 text-white p-3 rounded-full shadow-md transition-all duration-300"
+                >
+                  <i class="fa-solid fa-cart-shopping text-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div
+            class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 product-item"
+            data-category="all best"
+          >
+            <div class="relative aspect-square w-full">
+              <img
+                src="/img/products/shoe26_de67b47c-8d95-481f-aa85-268cdc309e4e_600x.jpg"
+                alt="Court Shoe"
+                class="absolute inset-0 w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
+              />
+              <img
+                src="/img/products/shoe23_5444b0e6-72c7-450c-aab6-081a70660dcd_600x.jpg"
+                alt="Court Shoe Hover"
+                class="absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              />
+            </div>
+            <div class="border-t border-gray-200 my-3"></div>
+            <div class="text-center px-3 pb-4">
+              <h3 class="font-semibold text-sm uppercase">Sneaker Shoe</h3>
+              <div class="flex justify-between items-center mt-2">
+                <span class="text-lg font-bold">$978.00</span>
+                <button
+                  class="bg-gray-900 hover:bg-gradient-to-r hover:from-purple-700 hover:via-indigo-600 hover:to-purple-800 active:scale-95 text-white p-3 rounded-full shadow-md transition-all duration-300"
+                >
+                  <i class="fa-solid fa-cart-shopping text-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div
+            class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 product-item"
+            data-category="all best"
+          >
+            <div class="relative aspect-square w-full">
+              <img
+                src="/img/products/shoe25_2b9a4ac0-54e3-4141-a0cd-3d7936bd40ef_600x.jpg"
+                alt="Court Shoe"
+                class="absolute inset-0 w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
+              />
+              <img
+                src="/img/products/shoe11_600x.jpg"
+                alt="Court Shoe Hover"
+                class="absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              />
+            </div>
+            <div class="border-t border-gray-200 my-3"></div>
+            <div class="text-center px-3 pb-4">
+              <h3 class="font-semibold text-sm uppercase">Utrall Shoe</h3>
+              <div class="flex justify-between items-center mt-2">
+                <span class="text-lg font-bold">$433.00</span>
+                <button
+                  class="bg-gray-900 hover:bg-gradient-to-r hover:from-purple-700 hover:via-indigo-600 hover:to-purple-800 active:scale-95 text-white p-3 rounded-full shadow-md transition-all duration-300"
+                >
+                  <i class="fa-solid fa-cart-shopping text-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div
+            class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 product-item"
+            data-category="all sale"
+          >
+            <div class="relative aspect-square w-full">
+              <img
+                src="/img/discount/1.jpg"
+                alt="Bast Shoe"
+                class="absolute inset-0 w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
+              />
+              <img
+                src="/img/discount/2.jpg"
+                alt="Bast Shoe Hover"
+                class="absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              />
+            </div>
+            <div class="border-t border-gray-200 my-3"></div>
+            <div class="text-center px-3 pb-4">
+              <h3 class="font-semibold text-sm uppercase">Bast Shoe</h3>
+              <div class="flex justify-between items-center mt-2">
+                <span class="text-lg font-bold">$106.00</span>
+                <button
+                  class="bg-gray-900 hover:bg-gradient-to-r hover:from-purple-700 hover:via-indigo-600 hover:to-purple-800 active:scale-95 text-white p-3 rounded-full shadow-md transition-all duration-300"
+                >
+                  <i class="fa-solid fa-cart-shopping text-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Item 6 -->
+          <div
+            class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 product-item"
+            data-category="all best"
+          >
+            <div class="relative aspect-square w-full">
+              <img
+                src="/img/discount/3.jpg"
+                alt="Court Shoe"
+                class="absolute inset-0 w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
+              />
+              <img
+                src="/img/discount/4.jpg"
+                alt="Court Shoe Hover"
+                class="absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              />
+            </div>
+            <div class="border-t border-gray-200 my-3"></div>
+            <div class="text-center px-3 pb-4">
+              <h3 class="font-semibold text-sm uppercase">Court Shoe</h3>
+              <div class="flex justify-between items-center mt-2">
+                <span class="text-lg font-bold">$478.00</span>
+                <button
+                  class="bg-gray-900 hover:bg-gradient-to-r hover:from-purple-700 hover:via-indigo-600 hover:to-purple-800 active:scale-95 text-white p-3 rounded-full shadow-md transition-all duration-300"
+                >
+                  <i class="fa-solid fa-cart-shopping text-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Item 7 -->
+          <div
+            class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 product-item"
+            data-category="all best"
+          >
+            <div class="relative aspect-square w-full">
+              <img
+                src="/img/discount/5.jpg"
+                alt="Court Shoe"
+                class="absolute inset-0 w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
+              />
+              <img
+                src="/img/discount/6.jpg"
+                alt="Court Shoe Hover"
+                class="absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              />
+            </div>
+            <div class="border-t border-gray-200 my-3"></div>
+            <div class="text-center px-3 pb-4">
+              <h3 class="font-semibold text-sm uppercase">Sneaker Shoe</h3>
+              <div class="flex justify-between items-center mt-2">
+                <span class="text-lg font-bold">$978.00</span>
+                <button
+                  class="bg-gray-900 hover:bg-gradient-to-r hover:from-purple-700 hover:via-indigo-600 hover:to-purple-800 active:scale-95 text-white p-3 rounded-full shadow-md transition-all duration-300"
+                >
+                  <i class="fa-solid fa-cart-shopping text-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Item 8 -->
+          <div
+            class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 product-item"
+            data-category="all best"
+          >
+            <div class="relative aspect-square w-full">
+              <img
+                src="/img/discount/7.jpg"
+                alt="Court Shoe"
+                class="absolute inset-0 w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
+              />
+              <img
+                src="/img/discount/8.jpg"
+                alt="Court Shoe Hover"
+                class="absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              />
+            </div>
+            <div class="border-t border-gray-200 my-3"></div>
+            <div class="text-center px-3 pb-4">
+              <h3 class="font-semibold text-sm uppercase">Utrall Shoe</h3>
+              <div class="flex justify-between items-center mt-2">
+                <span class="text-lg font-bold">$433.00</span>
+                <button
+                  class="bg-gray-900 hover:bg-gradient-to-r hover:from-purple-700 hover:via-indigo-600 hover:to-purple-800 active:scale-95 text-white p-3 rounded-full shadow-md transition-all duration-300"
+                >
+                  <i class="fa-solid fa-cart-shopping text-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Item 9 -->
+          <div
+            class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 product-item"
+            data-category="all sale"
+          >
+            <div class="relative aspect-square w-full">
+              <img
+                src="/img/discount/9.jpg"
+                alt="Bast Shoe"
+                class="absolute inset-0 w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
+              />
+              <img
+                src="/img/discount/10.jpg"
+                alt="Bast Shoe Hover"
+                class="absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              />
+            </div>
+            <div class="border-t border-gray-200 my-3"></div>
+            <div class="text-center px-3 pb-4">
+              <h3 class="font-semibold text-sm uppercase">Bast Shoe</h3>
+              <div class="flex justify-between items-center mt-2">
+                <span class="text-lg font-bold">$106.00</span>
+                <button
+                  class="bg-gray-900 hover:bg-gradient-to-r hover:from-purple-700 hover:via-indigo-600 hover:to-purple-800 active:scale-95 text-white p-3 rounded-full shadow-md transition-all duration-300"
+                >
+                  <i class="fa-solid fa-cart-shopping text-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Item 10 -->
+          <div
+            class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 product-item"
+            data-category="all best"
+          >
+            <div class="relative aspect-square w-full">
+              <img
+                src="/img/discount/11.jpg"
+                alt="Court Shoe"
+                class="absolute inset-0 w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
+              />
+              <img
+                src="/img/discount/12.jpg"
+                alt="Court Shoe Hover"
+                class="absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              />
+            </div>
+            <div class="border-t border-gray-200 my-3"></div>
+            <div class="text-center px-3 pb-4">
+              <h3 class="font-semibold text-sm uppercase">Court Shoe</h3>
+              <div class="flex justify-between items-center mt-2">
+                <span class="text-lg font-bold">$478.00</span>
+                <button
+                  class="bg-gray-900 hover:bg-gradient-to-r hover:from-purple-700 hover:via-indigo-600 hover:to-purple-800 active:scale-95 text-white p-3 rounded-full shadow-md transition-all duration-300"
+                >
+                  <i class="fa-solid fa-cart-shopping text-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Item 11 -->
+          <div
+            class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 product-item"
+            data-category="all best"
+          >
+            <div class="relative aspect-square w-full">
+              <img
+                src="/img/discount/13.jpg"
+                alt="Court Shoe"
+                class="absolute inset-0 w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
+              />
+              <img
+                src="/img/discount/14.jpg"
+                alt="Court Shoe Hover"
+                class="absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              />
+            </div>
+            <div class="border-t border-gray-200 my-3"></div>
+            <div class="text-center px-3 pb-4">
+              <h3 class="font-semibold text-sm uppercase">Sneaker Shoe</h3>
+              <div class="flex justify-between items-center mt-2">
+                <span class="text-lg font-bold">$978.00</span>
+                <button
+                  class="bg-gray-900 hover:bg-gradient-to-r hover:from-purple-700 hover:via-indigo-600 hover:to-purple-800 active:scale-95 text-white p-3 rounded-full shadow-md transition-all duration-300"
+                >
+                  <i class="fa-solid fa-cart-shopping text-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Item 12 -->
+          <div
+            class="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 product-item"
+            data-category="all best"
+          >
+            <div class="relative aspect-square w-full">
+              <img
+                src="/img/discount/16.jpg"
+                alt="Court Shoe"
+                class="absolute inset-0 w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
+              />
+              <img
+                src="/img/discount/15.jpg"
+                alt="Court Shoe Hover"
+                class="absolute inset-0 w-full h-full object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              />
+            </div>
+            <div class="border-t border-gray-200 my-3"></div>
+            <div class="text-center px-3 pb-4">
+              <h3 class="font-semibold text-sm uppercase">Utrall Shoe</h3>
+              <div class="flex justify-between items-center mt-2">
+                <span class="text-lg font-bold">$433.00</span>
+                <button
+                  class="bg-gray-900 hover:bg-gradient-to-r hover:from-purple-700 hover:via-indigo-600 hover:to-purple-800 active:scale-95 text-white p-3 rounded-full shadow-md transition-all duration-300"
+                >
+                  <i class="fa-solid fa-cart-shopping text-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Best -->
+          <div
+            class="product-item group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+            data-category="all best"
+          >
+            <!-- Add content as above -->
+          </div>
+
+          <!-- New -->
+          <div
+            class="product-item group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+            data-category="all new"
+          >
+            <!-- Add content as above -->
+          </div>
+
+          <!-- Add more items as needed -->
+        </div>
+      </div>
+    </div>
+    <!-- JS filter logic -->
+    <script>
+      const tabButtons = document.querySelectorAll(".tab-btn");
+      const items = document.querySelectorAll(".product-item");
+
+      tabButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          // Update active tab style
+          tabButtons.forEach((b) =>
+            b.classList.remove("text-black", "border-b-2", "border-black")
+          );
+          btn.classList.add("text-black", "border-b-2", "border-black");
+
+          const selected = btn.getAttribute("data-tab");
+
+          items.forEach((item) => {
+            const categories = item.getAttribute("data-category");
+            if (categories.includes(selected)) {
+              item.style.display = "";
+            } else {
+              item.style.display = "none";
+            }
+          });
+        });
+      });
+    </script>
+
     <!-- Footer 1-->
-    <div class="bg-white py-8">
+    <div class="bg-purple-600 py-8 border-t-4 border-white">
       <!-- Footer Icons Section -->
       <div
-        class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-8 text-center px-4"
+        class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-8 text-center px-4 animate__animated animate__zoomIn animate__delay-1s"
       >
         <!-- Item 1 -->
-        <div class="flex flex-col items-center">
-          <i class="fas fa-plane text-2xl mb-2"></i>
-          <p class="text-sm font-bold">Free</p>
-          <p class="text-sm">Delivery</p>
+        <div
+          class="flex items-center border-r-2 border-white pr-10 hover:scale-110 transition-all duration-300"
+        >
+          <i
+            class="fas fa-plane text-2xl mb-0 text-white transition-all duration-300 hover:text-yellow-300"
+          ></i>
+          <div class="ml-4">
+            <p class="text-sm font-bold text-white hover:text-yellow-300">
+              Free
+            </p>
+            <p class="text-sm text-white hover:text-yellow-300">Delivery</p>
+          </div>
         </div>
 
         <!-- Item 2 -->
-        <div class="flex flex-col items-center">
-          <i class="fas fa-headphones-alt text-2xl mb-2"></i>
-          <p class="text-sm font-bold">Clients</p>
-          <p class="text-sm">Discounts</p>
+        <div
+          class="flex items-center border-r-2 border-white pr-10 hover:scale-110 transition-all duration-300"
+        >
+          <i
+            class="fas fa-headphones-alt text-2xl mb-0 text-white transition-all duration-300 hover:text-yellow-300"
+          ></i>
+          <div class="ml-4">
+            <p class="text-sm font-bold text-white hover:text-yellow-300">
+              Clients
+            </p>
+            <p class="text-sm text-white hover:text-yellow-300">Discounts</p>
+          </div>
         </div>
 
         <!-- Item 3 -->
-        <div class="flex flex-col items-center">
-          <i class="fas fa-exchange-alt text-2xl mb-2"></i>
-          <p class="text-sm font-bold">Return</p>
-          <p class="text-sm">of goods</p>
+        <div
+          class="flex items-center border-r-2 border-white pr-10 hover:scale-110 transition-all duration-300"
+        >
+          <i
+            class="fas fa-exchange-alt text-2xl mb-0 text-white transition-all duration-300 hover:text-yellow-300"
+          ></i>
+          <div class="ml-4">
+            <p class="text-sm font-bold text-white hover:text-yellow-300">
+              Return
+            </p>
+            <p class="text-sm text-white hover:text-yellow-300">of goods</p>
+          </div>
         </div>
 
         <!-- Item 4 -->
-        <div class="flex flex-col items-center">
-          <i class="fas fa-tags text-2xl mb-2"></i>
-          <p class="text-sm font-bold">Many</p>
-          <p class="text-sm">Brands</p>
+        <div
+          class="flex items-center border-r-2 border-white pr-10 hover:scale-110 transition-all duration-300"
+        >
+          <i
+            class="fas fa-tags text-2xl mb-0 text-white transition-all duration-300 hover:text-yellow-300"
+          ></i>
+          <div class="ml-4">
+            <p class="text-sm font-bold text-white hover:text-yellow-300">
+              Many
+            </p>
+            <p class="text-sm text-white hover:text-yellow-300">Brands</p>
+          </div>
         </div>
       </div>
     </div>
