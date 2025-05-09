@@ -1,0 +1,286 @@
+/* Font Montserrat cho toàn bộ website */
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Thay đổi trọng lượng font nếu cần */
+    font-style: normal;
+  }
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 110px;
+    padding-left: 110px;
+}
+/* <!-- Header --> */
+#top-header {
+    background-color: #f0f0f0;
+    padding: 1px 0;
+    border-bottom: 5px solid #ccc;
+  }
+#top-header .icon ul li a:hover {
+    background-color: #571f7c;
+    color: white; 
+    transition: all 0.3s ease; 
+  }
+/* <!-- Carousel-Banner --> */
+.carousel-indicator {
+    background-color: rgba(0, 0, 0, 0.4); /* Màu nền mặc định của các nút */
+    transition: background-color 0.3s, transform 0.3s; /* Thêm hiệu ứng chuyển màu và thu/phóng */
+  }
+  
+  .carousel-indicator:hover {
+    background-color: #7a1eae; /* Màu tím galaxy khi hover */
+    transform: scale(1.2); /* Phóng to khi hover */
+  }
+  
+  .carousel-indicator[aria-current="true"] {
+    background-color: #7a1eae; /* Màu tím galaxy khi là nút hiện tại */
+  }
+  /* Mặc định của nút Next và Previous */
+button[data-carousel-prev],
+button[data-carousel-next] {
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hiệu ứng khi hover vào nút */
+button[data-carousel-prev]:hover,
+button[data-carousel-next]:hover {
+  background-color: rgba(122, 30, 174, 0.5); /* Màu nền tím galaxy khi hover */
+  transform: scale(1.1); /* Phóng to nút khi hover */
+  box-shadow: 0 0 8px rgba(122, 30, 174, 0.7); /* Bóng đổ tím khi hover */
+}
+
+/* Hiệu ứng khi focus vào nút */
+button[data-carousel-prev]:focus,
+button[data-carousel-next]:focus {
+  background-color: rgba(122, 30, 174, 0.7); /* Màu nền khi focus */
+  box-shadow: 0 0 10px rgba(122, 30, 174, 0.8); /* Bóng đổ mạnh hơn khi focus */
+  outline: none; /* Bỏ viền focus mặc định */
+}
+
+/* Tăng cường hiệu ứng cho nút khi hover */
+button[data-carousel-prev]:hover span,
+button[data-carousel-next]:hover span {
+  background-color: rgba(255, 255, 255, 0.6); /* Màu sáng hơn cho biểu tượng bên trong nút */
+}
+
+/* Cải thiện giao diện tối (dark mode) */
+button[data-carousel-prev]:hover span,
+button[data-carousel-next]:hover span {
+  background-color: rgba(255, 255, 255, 0.4); /* Màu sáng hơn cho biểu tượng khi hover trong chế độ tối */
+}
+
+/* Portfolio 1*/
+.title p {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #a64bf4; /* tím pastel hiện đại */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .title h2 {
+    font-size: 64px;
+    line-height: 1.1;
+    font-weight: 900;
+    background: linear-gradient(90deg, #6b0f9c, #c471ed, #12c2e9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+    text-shadow: 0 2px 10px rgba(98, 0, 234, 0.25);
+  }
+  
+.portfolio {
+    background-image: url(../img/portfolio/4.jpg);
+    background-size: cover;
+    background-position: top center;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+.portfolio__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 1.5fr;
+    gap: 35px;
+}
+
+.portfolio__item {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio__item::before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    display: block;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    transform: skewX(-25deg);
+    transition: all 0.75s;
+}
+
+.portfolio__item:hover::before {
+    left: 125%;
+}
+
+.portfolio__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: all 0.75s;
+}
+
+.portfolio__item:hover .portfolio__overlay {
+    opacity: 1;
+}
+
+.portfolio__icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  
+    font-size: 28px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: linear-gradient(135deg, #6b0f9c 0%, #8e44ad 25%, #c471ed 50%, #12c2e9 75%, #6b0f9c 100%);
+    background-size: 200%;
+    border-radius: 10px;
+    transform: translate(20px, -20px);
+    transition: all 0.75s;
+    text-align: center;
+  }
+.portfolio__icon:hover {
+    background-position: right center;
+}
+  
+
+.portfolio__icon a {
+    color: #fff;
+}
+
+.portfolio__item:hover .portfolio__icon {
+    transform: translate(0);
+}
+
+.portfolio__icon a {
+    cursor: pointer;
+}
+
+.portfolio__text {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    text-align: left;
+    transform: translateY(150px);
+    transition: all 0.75s;
+}
+
+.portfolio__item:hover .portfolio__text {
+    transform: translateY(0);
+}
+
+.portfolio__text h3 {
+    font-size: 22px;
+    font-weight: 800;
+    color: white;
+}
+
+.portfolio__text p {
+    color: #fff;
+    opacity: 0.7;
+}
+
+.portfolio__item img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio__item1 {
+    grid-column: 1 / span 2;
+}
+
+.portfolio__item5 {
+    grid-column: 1 / span 2;
+}
+
+.portfolio__item6 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+}
+/* <!-- Portfolio 2--> */
+/* <!-- NEW ARRIVALS --> */
+.blog-carousel .slick-slide {
+    margin-right: 60px; 
+  }
+
+/* <!-- Banner Section --> */
+/* <!-- BEST SELLERS --> */
+/* <!-- Footer --> */
+/* <!-- BackToTop --> */
+.backtotop {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    color: white;
+    font-size: 20px;
+    box-shadow: rgba(107, 15, 156, 0.5) -4px 4px 24px -4px;
+    visibility: hidden;
+    opacity: 0;
+  
+    background: linear-gradient(135deg, #6b0f9c, #c471ed, #12c2e9);
+    background-size: 200%;
+    background-position: left center;
+  
+    border-radius: 8px;
+    transition: all 0.4s ease;
+    z-index: 999;
+}
+
+.backtotop:hover {
+    background-position: right center;
+    box-shadow: rgba(107, 15, 156, 0.7) -4px 4px 30px -2px;
+    transform: scale(1.2); /* Tăng kích thước khi hover */
+}
+
+/* Hiển thị nút Back to Top */
+.cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Nút Back to Top chuyển mờ khi không có sự kiện hover */
+.cd-top--fade-out { 
+    opacity: 0.5;
+}
+
+/* Hiệu ứng cho icon bên trong */
+.backtotop i {
+    transition: transform 0.3s ease, font-size 0.3s ease;
+}
+
+/* Khi hover vào icon, quay chiều lên */
+.backtotop:hover i {
+    transform: rotate(180deg); /* Quay icon 180 độ khi hover */
+    font-size: 24px; /* Tăng kích thước của icon */
+}
+
