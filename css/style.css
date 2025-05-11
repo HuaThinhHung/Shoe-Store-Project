@@ -46,17 +46,15 @@ button[data-carousel-next] {
 /* Hiệu ứng khi hover vào nút */
 button[data-carousel-prev]:hover,
 button[data-carousel-next]:hover {
-  background-color: rgba(122, 30, 174, 0.5); /* Màu nền tím galaxy khi hover */
-  transform: scale(1.1); /* Phóng to nút khi hover */
-  box-shadow: 0 0 8px rgba(122, 30, 174, 0.7); /* Bóng đổ tím khi hover */
+  background-color: rgba(122, 30, 174, 0.5);
 }
 
 /* Hiệu ứng khi focus vào nút */
 button[data-carousel-prev]:focus,
 button[data-carousel-next]:focus {
   background-color: rgba(122, 30, 174, 0.7); /* Màu nền khi focus */
-  box-shadow: 0 0 10px rgba(122, 30, 174, 0.8); /* Bóng đổ mạnh hơn khi focus */
-  outline: none; /* Bỏ viền focus mặc định */
+  box-shadow: 1px rgba(122, 30, 174, 0.8); /* Bóng đổ mạnh hơn khi focus */
+  outline: none; 
 }
 
 /* Tăng cường hiệu ứng cho nút khi hover */
@@ -225,7 +223,7 @@ button[data-carousel-next]:hover span {
 /* <!-- Portfolio 2--> */
 /* <!-- NEW ARRIVALS --> */
 .blog-carousel .slick-slide {
-    margin-right: 60px; 
+    margin-right: 20px; 
   }
 
 /* <!-- Banner Section --> */
