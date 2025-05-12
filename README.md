@@ -18,11 +18,33 @@ Dự án này là một bài thực hành front-end cơ bản sử dụng **HTML
 - img / products / item / sneaker
 - libs / wow / slick / backtotop
 
-## 🚀 Cách sử dụng
+## ▶️ Cách chạy dự án
 
-### Cách 1: Dùng trực tiếp
-Chạy file `index.html` trên trình duyệt (double click hoặc mở qua Live Server nếu dùng VSCode).
+> ❗**Yêu cầu:** Trình duyệt web (Chrome, Firefox, Edge, v.v.)
 
-Tailwind được import thông qua CDN:
-```html
+### ✅ Cách chạy:
+
+1. **Tải về project:**
+   - Clone từ GitHub:  
+     ```bash
+     git clone https://github.com/your-username/ten-du-an.git
+     cd ten-du-an
+     ```
+
+2. **Chạy file `index.html`:**
+   - Mở trực tiếp bằng trình duyệt (double click vào `index.html`)  
+   **HOẶC**  
+   - Dùng **Live Server** nếu bạn sử dụng Visual Studio Code (khuyên dùng):  
+     - Mở thư mục dự án trong VSCode  
+     - Click chuột phải vào `index.html` → chọn **"Open with Live Server"**
+
+## 🌐 Tailwind CSS
+
+Tailwind được tích hợp qua CDN trong file `index.html` như sau:
 <script src="https://cdn.tailwindcss.com"></script>
+
+👤 Tác giả
+Họ tên: [Hứa Thịnh Hưng]
+
+Liên hệ: https://github.com/HuaThinhHung
+ 
