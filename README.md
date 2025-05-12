@@ -9,6 +9,8 @@ Dự án này là một bài thực hành front-end cơ bản sử dụng **HTML
 - CSS3
 - [Tailwind CSS](https://tailwindcss.com/)
 - JavaScript cho tương tác cơ bản
+- Animate.css
+- Icon Heroicons / FontAwesome
 
 ## 📁 Cấu trúc thư mục
 - index.html
