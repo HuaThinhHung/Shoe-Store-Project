@@ -13,8 +13,8 @@ Dự án này là một bài thực hành front-end cơ bản sử dụng **HTML
 ## 📁 Cấu trúc thư mục
 - index.html
 - css / style.css
-- img
-- libs
+- img / products / item / sneaker
+- libs / wow / slick / backtotop
 
 ## 🚀 Cách sử dụng
 
