@@ -5,27 +5,259 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Page</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-    </style>
+    <!-- Font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@300&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <!-- Font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-thin.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-solid.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-regular.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-light.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-thin.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-regular.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-light.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-thin.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-regular.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-light.css" />
+    <!-- Wow -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <!--Slick -->
+    <link rel="stylesheet" href="./libs/slick/slick.css" />
+    <link rel="stylesheet" href="./libs/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Thêm CDN cho Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- Cdn animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Flowbite -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <!-- Taiwild -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <!-- Add home - login  -->
+    <link rel="stylesheet" href="home/products.html">
+    <link rel="stylesheet" href="login.html">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
 </head>
 
-<body class="bg-purple-50 text-gray-800">
-    <header class="bg-white shadow py-6 px-10 mb-10">
-        <div class="max-w-screen-xl mx-auto flex justify-between items-center">
-            <h1 class="text-3xl font-bold text-purple-700">PurpleStore</h1>
-            <nav class="space-x-6 text-lg font-medium">
-                <a href="/index.html" class="text-purple-600 hover:underline">Home</a>
-                <a href="#" class="text-purple-600 hover:underline">Products</a>
-                <a href="#" class="text-purple-600 hover:underline">Contact</a>
-            </nav>
-        </div>
-    </header>
+<body>
+    <!-- Top Header -->
+    <div class="header-1">
+        <div id="top-header" class="bg-destructive block">
+            <div class="container">
+                <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 py-3 px-4">
+                    <!-- Contact info -->
+                    <div class="w-full lg:w-auto">
+                        <ul class="flex flex-col sm:flex-row gap-4 sm:gap-7.5">
+                            <li>
+                                <a href="#" class="text-cream-foreground flex items-start gap-2">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <span>(978) 654-3210</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-cream-foreground flex items-start gap-2">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <span>info@example.com</span>
+                                </a>
+                            </li>
+                            <li>
+                                <p class="text-cream-foreground flex items-start gap-2">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span>1646A Võ Văn Kiệt Quận 8 Phường 16. TP.HCM</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
 
+                    <!-- Social icons -->
+                    <div class="w-full lg:w-auto">
+                        <ul class="flex justify-start lg:justify-end items-center gap-3">
+                            <li>
+                                <a href="#"
+                                    class="rounded-md w-6 h-6 flex text-xs items-center justify-center border border-white border-opacity-20 text-cream-foreground hover:bg-primary transition-all duration-500">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="rounded-md w-6 h-6 flex text-xs items-center justify-center border border-white border-opacity-20 text-cream-foreground hover:bg-primary transition-all duration-500">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="rounded-md w-6 h-6 flex text-xs items-center justify-center border border-white border-opacity-20 text-cream-foreground hover:bg-primary transition-all duration-500">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="rounded-md w-6 h-6 flex text-xs items-center justify-center border border-white border-opacity-20 text-cream-foreground hover:bg-primary transition-all duration-500">
+                                    <i class="fa-brands fa-pinterest-p"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Header -->
+    <div class="header-2 relative z-50">
+        <nav class="bg-white text-black border-gray-200">
+            <div class="max-w-screen-xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-4">
+                <!-- Logo -->
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="../img/files/shoe-logo-new_300x300.png"
+                        class="h-14 sm:h-16 md:h-14 lg:h-16 wow animate__animated animate__lightSpeedInLeft"
+                        alt="Logo" />
+                </a>
+
+                <!-- Toggle Button (mobile) -->
+                <div class="flex md:hidden items-center gap-3">
+                    <button data-collapse-toggle="navbar-dropdown" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        aria-controls="navbar-dropdown" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Navbar Links -->
+                <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+                    <ul
+                        class="flex flex-col md:flex-row md:space-x-6 font-medium mt-4 md:mt-0 border md:border-0 border-gray-100 rounded-lg md:rounded-none p-4 md:p-0 bg-white">
+                        <li>
+                            <a href="../index.html"
+                                class="block py-2 px-3 hover:text-[#571f7c] hover:bg-gray-100 wow animate__animated animate__zoomIn">Home</a>
+                        </li>
+                        <li>
+                            <button id="dropdownCollecionLink" data-dropdown-toggle="dropdownCollecion"
+                                class="flex items-center justify-between w-full py-2 px-3 hover:text-[#571f7c] hover:bg-gray-100 wow animate__animated animate__zoomIn">
+                                Collection
+                                <svg class="w-2.5 h-2.5 ml-2" fill="none" viewBox="0 0 10 6">
+                                    <path d="m1 1 4 4 4-4" stroke="currentColor" stroke-width="2" />
+                                </svg>
+                            </button>
+                            <div id="dropdownCollecion"
+                                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
+                                <ul class="py-2 text-sm text-black">
+                                    <li>
+                                        <a href="#" class="block px-4 py-2 hover:text-[#571f7c] hover:bg-gray-100">Men's
+                                            Shoes</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block px-4 py-2 hover:text-[#571f7c] hover:bg-gray-100">Women's
+                                            Shoes</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="block px-4 py-2 hover:text-[#571f7c] hover:bg-gray-100">Kids'
+                                            Shoes</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./home/products.html"
+                                class="block py-2 px-3 hover:text-[#571f7c] hover:bg-gray-100 wow animate__animated animate__zoomIn">Shoes</a>
+                        </li>
+                        <li>
+                            <a href="./home/products.html"
+                                class="block py-2 px-3 hover:text-[#571f7c] hover:bg-gray-100 wow animate__animated animate__zoomIn">Boots</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 hover:text-[#571f7c] hover:bg-gray-100 wow animate__animated animate__zoomIn">Climbing</a>
+                        </li>
+                        <li>
+                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                class="flex items-center justify-between w-full py-2 px-3 hover:text-[#571f7c] hover:bg-gray-100 wow animate__animated animate__zoomIn">
+                                Pages
+                                <svg class="w-2.5 h-2.5 ml-2" fill="none" viewBox="0 0 10 6">
+                                    <path d="m1 1 4 4 4-4" stroke="currentColor" stroke-width="2" />
+                                </svg>
+                            </button>
+                            <div id="dropdownNavbar"
+                                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
+                                <ul class="py-2 text-sm text-black">
+                                    <li>
+                                        <a href="#" class="block px-4 py-2 hover:text-[#571f7c] hover:bg-gray-100">About
+                                            us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block px-4 py-2 hover:text-[#571f7c] hover:bg-gray-100">Contact
+                                            us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block px-4 py-2 hover:text-[#571f7c] hover:bg-gray-100">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block px-4 py-2 hover:text-[#571f7c] hover:bg-gray-100">Wishlist</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Icons -->
+                <div class="flex items-center space-x-4 text-black px-3 py-1 rounded-md md:ml-4">
+                    <!-- Search Icon and Input -->
+                    <div x-data="{ open: false }" class="relative">
+                        <!-- Icon Button -->
+                        <a href="#" @click.prevent="open = !open" class="hover:text-[#571f7c] transition duration-200">
+                            <i class="fas fa-magnifying-glass text-lg"></i>
+                        </a>
+
+                        <!-- Search Bar -->
+                        <div x-show="open" x-transition
+                            class="absolute right-0 mt-2 w-64 bg-white border border-gray-300 rounded shadow-lg z-50">
+                            <form class="p-2">
+                                <input type="text" placeholder="Tìm kiếm..."
+                                    class="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#571f7c]">
+                            </form>
+                        </div>
+                    </div>
+                    <!-- login -->
+                    <a href="/home/login.html" class="hover:text-[#571f7c] transition duration-200">
+                        <i class="fas fa-user text-lg"></i>
+                    </a>
+                    <!-- cart -->
+                    <a href="#" class="hover:text-[#571f7c] transition duration-200">
+                        <i class="fas fa-cart-shopping text-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Product -->
     <main class="max-w-screen-xl mx-auto px-6">
         <h2 class="text-4xl font-bold text-purple-800 mb-6">Our Products</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
@@ -123,7 +355,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Product Item 2-->
+            <!-- Product Item 3-->
             <div
                 class="bg-white border border-purple-200 rounded-2xl shadow-md p-6 group relative overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
                 <div class="relative">
@@ -170,7 +402,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Product Item 2-->
+            <!-- Product Item 4-->
             <div
                 class="bg-white border border-purple-200 rounded-2xl shadow-md p-6 group relative overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
                 <div class="relative">
@@ -217,7 +449,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Product Item 2-->
+            <!-- Product Item 5-->
             <div
                 class="bg-white border border-purple-200 rounded-2xl shadow-md p-6 group relative overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
                 <div class="relative">
@@ -264,7 +496,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Product Item 2-->
+            <!-- Product Item 6-->
             <div
                 class="bg-white border border-purple-200 rounded-2xl shadow-md p-6 group relative overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
                 <div class="relative">
@@ -311,7 +543,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Product Item 2-->
+            <!-- Product Item 7-->
             <div
                 class="bg-white border border-purple-200 rounded-2xl shadow-md p-6 group relative overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
                 <div class="relative">
@@ -358,7 +590,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Product Item 2-->
+            <!-- Product Item 8-->
             <div
                 class="bg-white border border-purple-200 rounded-2xl shadow-md p-6 group relative overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
                 <div class="relative">
@@ -405,7 +637,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Product Item 2-->
+            <!-- Product Item 9-->
             <div
                 class="bg-white border border-purple-200 rounded-2xl shadow-md p-6 group relative overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
                 <div class="relative">
@@ -452,7 +684,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Product Item 2-->
+            <!-- Product Item 10-->
             <div
                 class="bg-white border border-purple-200 rounded-2xl shadow-md p-6 group relative overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
                 <div class="relative">
@@ -499,7 +731,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Product Item 2-->
+            <!-- Product Item 11-->
             <div
                 class="bg-white border border-purple-200 rounded-2xl shadow-md p-6 group relative overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
                 <div class="relative">
@@ -546,7 +778,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Product Item 2-->
+            <!-- Product Item 12-->
             <div
                 class="bg-white border border-purple-200 rounded-2xl shadow-md p-6 group relative overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
                 <div class="relative">
@@ -594,12 +826,315 @@
                 </div>
             </div>
         </div>
-
     </main>
 
-    <footer class="bg-white text-center mt-16 py-6 border-t border-purple-100">
-        <p class="text-sm text-purple-500">&copy; 2025 PurpleStore. All rights reserved.</p>
+    <!-- Footer 1-->
+    <div class="bg-purple-600 py-8 border-t-4 border-white">
+        <!-- Footer Icons Section -->
+        <div
+            class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-8 text-center px-4 animate__animated animate__zoomIn animate__delay-1s">
+            <!-- Item 1 -->
+            <div class="flex items-center border-r-2 border-white pr-10 hover:scale-110 transition-all duration-300">
+                <i class="fas fa-plane text-2xl mb-0 text-white transition-all duration-300 hover:text-yellow-300"></i>
+                <div class="ml-4">
+                    <p class="text-sm font-bold text-white hover:text-yellow-300">
+                        Free
+                    </p>
+                    <p class="text-sm text-white hover:text-yellow-300">Delivery</p>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="flex items-center border-r-2 border-white pr-10 hover:scale-110 transition-all duration-300">
+                <i
+                    class="fas fa-headphones-alt text-2xl mb-0 text-white transition-all duration-300 hover:text-yellow-300"></i>
+                <div class="ml-4">
+                    <p class="text-sm font-bold text-white hover:text-yellow-300">
+                        Clients
+                    </p>
+                    <p class="text-sm text-white hover:text-yellow-300">Discounts</p>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="flex items-center border-r-2 border-white pr-10 hover:scale-110 transition-all duration-300">
+                <i
+                    class="fas fa-exchange-alt text-2xl mb-0 text-white transition-all duration-300 hover:text-yellow-300"></i>
+                <div class="ml-4">
+                    <p class="text-sm font-bold text-white hover:text-yellow-300">
+                        Return
+                    </p>
+                    <p class="text-sm text-white hover:text-yellow-300">of goods</p>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="flex items-center border-r-2 border-white pr-10 hover:scale-110 transition-all duration-300">
+                <i class="fas fa-tags text-2xl mb-0 text-white transition-all duration-300 hover:text-yellow-300"></i>
+                <div class="ml-4">
+                    <p class="text-sm font-bold text-white hover:text-yellow-300">
+                        Many
+                    </p>
+                    <p class="text-sm text-white hover:text-yellow-300">Brands</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer 2 -->
+    <footer class="bg-black text-gray-300 text-sm">
+        <div class="max-w-7xl mx-auto px-4 py-8">
+            <!-- Top -->
+            <div class="flex flex-col md:flex-row justify-between items-center border-b border-gray-700 pb-6">
+                <div class="flex items-center space-x-4">
+                    <img src="/img/files/footer-logo_400x_10a45027-2bea-4763-a52f-4a341e855e9e_x70@2x.png"
+                        alt="ShoeZone" class="h-10 align-top mt-[-5px] w 20 h 20 transform scale-175" />
+                </div>
+                <!-- Mail -->
+                <div class="bg-black rounded-md p-4 flex items-center">
+                    <div class="flex items-center rounded-md px-3 py-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5 text-gray-400 mr-2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.25a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25v-.25M4.5 9h15m-15 10.5h15" />
+                        </svg>
+                        <input type="email" placeholder="Your email address..."
+                            class="bg-transparent text-white placeholder-gray-400 focus:outline-none text-sm" />
+                    </div>
+                    <button
+                        class="bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-md px-4 py-2 ml-3 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-1">
+                        Subscribe
+                    </button>
+                </div>
+                <!-- Icons  -->
+                <div class="flex space-x-4 mt-4 md:mt-0 text-white">
+                    <div class="icon">
+                        <ul class="flex items-center gap-[14px]">
+                            <li>
+                                <a href=""
+                                    class="rounded-md w-10 h-10 flex text-xs items-center justify-center border border-white border-opacity-20 text-cream-foreground hover:bg-purple-600 hover:scale-110 transition-all duration-500">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""
+                                    class="rounded-md w-10 h-10 flex text-xs items-center justify-center border border-white border-opacity-20 text-cream-foreground hover:bg-purple-600 hover:scale-110 transition-all duration-500">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""
+                                    class="rounded-md w-10 h-10 flex text-xs items-center justify-center border border-white border-opacity-20 text-cream-foreground hover:bg-purple-600 hover:scale-110 transition-all duration-500">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href=""
+                                    class="rounded-md w-10 h-10 flex text-xs items-center justify-center border border-white border-opacity-20 text-cream-foreground hover:bg-purple-600 hover:scale-110 transition-all duration-500">
+                                    <i class="fa-brands fa-pinterest-p"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Middle -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 py-8">
+                <!-- Contact -->
+                <div>
+                    <h3
+                        class="text-2xl text-white font-semibold mb-4 text-white hover:text-purple-600 transition-colors duration-300">
+                        Contact us
+                    </h3>
+                    <ul class="space-y-5 text-sm">
+                        <li>
+                            <i class="fas fa-map-marker-alt mr-2"></i> No: 58 A, East
+                            Madison Street, Baltimore, MD
+                        </li>
+                        <li><i class="fas fa-phone mr-2"></i> 000 - 123456789</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@example.com</li>
+                    </ul>
+                </div>
+
+                <!-- Info -->
+                <div>
+                    <h3
+                        class="text-2xl text-white font-semibold mb-4 hover:text-purple-600 transition-colors duration-300">
+                        Info
+                    </h3>
+                    <ul class="space-y-5 text-white">
+                        <li>
+                            <a href="#" class="hover:text-purple-600 transition-colors duration-300">Search Terms</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-purple-600 transition-colors duration-300">Advanced Search</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-purple-600 transition-colors duration-300">Orders and
+                                Returns</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-purple-600 transition-colors duration-300">Consultant</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-purple-600 transition-colors duration-300">Help & FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Help -->
+                <div>
+                    <h3
+                        class="text-2xl text-white font-semibold mb-4 text-white hover:text-purple-600 transition-colors duration-300">
+                        Help
+                    </h3>
+                    <ul class="space-y-5 text-white">
+                        <li>
+                            <a href="#" class="hover:text-purple-600 transition-colors duration-300">About</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-purple-600 transition-colors duration-300">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-purple-600 transition-colors duration-300">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-purple-600 transition-colors duration-300">Best Sellers</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-purple-600 transition-colors duration-300">Support</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div>
+                    <h3
+                        class="text-2xl text-white font-semibold mb-4 text-white hover:text-purple-600 transition-colors duration-300">
+                        Support
+                    </h3>
+                    <ul class="space-y-5 text-white">
+                        <li>
+                            <a href="#" class="hover:text-purple-600 transition-colors duration-300">Search Terms</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-purple-600 transition-colors duration-300">Advanced Search</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-purple-600 transition-colors duration-300">Orders and
+                                Returns</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-purple-600 transition-colors duration-300">Consultant</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-purple-600 transition-colors duration-300">Help & FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom -->
+            <div class="border-t border-gray-700 pt-4 text-center text-gray-400 ">
+                <div
+                    class="flex flex-col sm:flex-row justify-center items-center sm:gap-8 gap-10 text-center text-sm sm:text-base px-4">
+                    <p class="mb-1 sm:mb-2 hover:text-purple-600 transition-colors duration-300">
+                        Search Terms <span class="hidden sm:inline">|</span>
+                    </p>
+                    <p class="mb-1 sm:mb-2 hover:text-purple-600 transition-colors duration-300">
+                        Advanced Search <span class="hidden sm:inline">|</span>
+                    </p>
+                    <p class="mb-1 sm:mb-2 hover:text-purple-600 transition-colors duration-300">
+                        Orders and Returns <span class="hidden sm:inline">|</span>
+                    </p>
+                    <p class="mb-1 sm:mb-2 hover:text-purple-600 transition-colors duration-300">
+                        Consultant <span class="hidden sm:inline">|</span>
+                    </p>
+                    <p class="mb-1 sm:mb-2 hover:text-purple-600 transition-colors duration-300">
+                        Help & FAQs
+                    </p>
+                </div>
+
+                <div class="bg-purple-800 text-white py-1 mt-1 flex items-center justify-between px-4">
+                    <p class="text-sm">© 2025 Shoes Design Themes</p>
+                    <div class="flex space-x-4 items-center">
+                        <i class="fab fa-cc-visa fa-2x"></i>
+                        <i class="fab fa-cc-mastercard fa-2x"></i>
+                        <i class="fab fa-cc-amex fa-2x"></i>
+                        <i class="fab fa-cc-paypal fa-2x"></i>
+                        <i class="fab fa-cc-discover fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!-- BackToTop -->
+    <a href="#" class="backtotop cd-top text-replace js-cd-top">
+        <i class="fa-solid fa-shoe-prints"></i>
+    </a>
+    <!-- ADD Script -->
+    <!-- Wow -->
+    <script src="<link" rel="stylesheet" href="css/animate.css"></script>
+    <script src="./libs/wowjs/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- Slick -->
+    <!-- Thêm CDN cho jQuery và Slick JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Thêm jQuery và Slick JS cho carousel -->
+    <script>
+        $(document).ready(function () {
+            $(".blog-carousel").slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 3,
+                arrows: true,
+                dots: false,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                centerMode: false,
+                adaptiveHeight: false, // Ngăn chiều cao thay đổi gây giật
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            arrows: true,
+                            dots: false,
+                        },
+                    },
+                ],
+            });
+        });
+    </script>
+    <!-- Flowbite JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <!-- Wow -->
+    <script src="<link" rel="stylesheet" href="css/animate.css"></script>
+    <script src="./libs/wowjs/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- Fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+        });
+    </script>
+    <!-- Flowbite -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <!-- Backtotop -->
+    <script src="./libs/backtotop/util.js"></script>
+    <script src="./libs/backtotop/main.js"></script>
+    <!-- Alpine.js -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
 </body>
 
 </html>
