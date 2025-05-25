@@ -12,6 +12,13 @@ body {
     padding-right: 110px;
     padding-left: 110px;
 }
+/* Top Header */
+@media (max-width: 640px) {
+  .header-1, #top-header {
+    display: none !important;
+  }
+}
+
 /* <!-- Header --> */
 #top-header {
     background-color: #f0f0f0;
@@ -28,45 +35,15 @@ body {
     background-color: rgba(0, 0, 0, 0.4); /* Màu nền mặc định của các nút */
     transition: background-color 0.3s, transform 0.3s; /* Thêm hiệu ứng chuyển màu và thu/phóng */
   }
-  
-  .carousel-indicator:hover {
-    background-color: #7a1eae; /* Màu tím galaxy khi hover */
-    transform: scale(1.2); /* Phóng to khi hover */
-  }
-  
-  .carousel-indicator[aria-current="true"] {
-    background-color: #7a1eae; /* Màu tím galaxy khi là nút hiện tại */
-  }
   /* Mặc định của nút Next và Previous */
 button[data-carousel-prev],
 button[data-carousel-next] {
   transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
-
-/* Hiệu ứng khi hover vào nút */
-button[data-carousel-prev]:hover,
-button[data-carousel-next]:hover {
-  background-color: rgba(122, 30, 174, 0.5);
-}
-
-/* Hiệu ứng khi focus vào nút */
-button[data-carousel-prev]:focus,
-button[data-carousel-next]:focus {
-  background-color: rgba(122, 30, 174, 0.7); /* Màu nền khi focus */
-  box-shadow: 1px rgba(122, 30, 174, 0.8); /* Bóng đổ mạnh hơn khi focus */
-  outline: none; 
-}
-
 /* Tăng cường hiệu ứng cho nút khi hover */
 button[data-carousel-prev]:hover span,
 button[data-carousel-next]:hover span {
-  background-color: rgba(255, 255, 255, 0.6); /* Màu sáng hơn cho biểu tượng bên trong nút */
-}
-
-/* Cải thiện giao diện tối (dark mode) */
-button[data-carousel-prev]:hover span,
-button[data-carousel-next]:hover span {
-  background-color: rgba(255, 255, 255, 0.4); /* Màu sáng hơn cho biểu tượng khi hover trong chế độ tối */
+  background-color: #571f7c;
 }
 
 /* Portfolio 1*/
@@ -341,12 +318,27 @@ button[data-carousel-next]:hover span {
 /* <!-- Portfolio 2--> */
 /* <!-- NEW ARRIVALS --> */
 .blog-carousel .slick-slide {
-    margin-right: 60px; 
+    margin-right: 40px; 
   }
 
 /* <!-- Banner Section --> */
 /* <!-- BEST SELLERS --> */
-/* <!-- Footer --> */
+/* <!-- Footer 1--> */
+/* <!-- Footer 2--> */
+@media (max-width: 767px) {
+  .footer-col {
+    display: none;
+  }
+}
+.responsive-border-b {
+  border-bottom: 1px solid silver;
+}
+
+@media (max-width: 767px) {
+  .responsive-border {
+    border-bottom: none;
+  }
+}
 /* <!-- BackToTop --> */
 .backtotop {
     width: 50px;

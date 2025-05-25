@@ -59,27 +59,30 @@
 
 <body>
     <!-- Top Header -->
-    <div class="header-1">
+    <div class="header-1 hidden sm:block">
         <div id="top-header" class="bg-destructive block">
-            <div class="container">
-                <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 py-3 px-4">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 py-3">
                     <!-- Contact info -->
-                    <div class="w-full lg:w-auto">
-                        <ul class="flex flex-col sm:flex-row gap-4 sm:gap-7.5">
+                    <div class="w-full sm:w-auto">
+                        <ul class="flex flex-col sm:flex-row gap-3 sm:gap-7.5">
                             <li>
-                                <a href="#" class="text-cream-foreground flex items-start gap-2">
+                                <a href="#"
+                                    class="text-cream-foreground flex items-center gap-2 whitespace-nowrap hover:text-purple-500">
                                     <i class="fa-solid fa-phone"></i>
                                     <span>(978) 654-3210</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="text-cream-foreground flex items-start gap-2">
+                                <a href="#"
+                                    class="text-cream-foreground flex items-center gap-2 whitespace-nowrap hover:text-purple-500">
                                     <i class="fa-solid fa-envelope"></i>
                                     <span>info@example.com</span>
                                 </a>
                             </li>
                             <li>
-                                <p class="text-cream-foreground flex items-start gap-2">
+                                <p
+                                    class="text-cream-foreground flex items-center gap-2 whitespace-nowrap hover:text-purple-500">
                                     <i class="fa-solid fa-location-dot"></i>
                                     <span>1646A Võ Văn Kiệt Quận 8 Phường 16. TP.HCM</span>
                                 </p>
@@ -87,31 +90,32 @@
                         </ul>
                     </div>
 
+
                     <!-- Social icons -->
-                    <div class="w-full lg:w-auto">
-                        <ul class="flex justify-start lg:justify-end items-center gap-3">
+                    <div class="w-full sm:w-auto">
+                        <ul class="flex justify-start sm:justify-end items-center gap-3 flex-wrap">
                             <li>
                                 <a href="#"
                                     class="rounded-md w-6 h-6 flex text-xs items-center justify-center border border-white border-opacity-20 text-cream-foreground hover:bg-primary transition-all duration-500">
-                                    <i class="fa-brands fa-facebook-f"></i>
+                                    <i class="fa-brands fa-facebook-f whitespace-nowrap hover:text-purple-700"></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="#"
                                     class="rounded-md w-6 h-6 flex text-xs items-center justify-center border border-white border-opacity-20 text-cream-foreground hover:bg-primary transition-all duration-500">
-                                    <i class="fa-brands fa-x-twitter"></i>
+                                    <i class="fa-brands fa-twitter whitespace-nowrap hover:text-purple-700"></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="#"
                                     class="rounded-md w-6 h-6 flex text-xs items-center justify-center border border-white border-opacity-20 text-cream-foreground hover:bg-primary transition-all duration-500">
-                                    <i class="fa-brands fa-linkedin"></i>
+                                    <i class="fa-brands fa-linkedin whitespace-nowrap hover:text-purple-700"></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="#"
                                     class="rounded-md w-6 h-6 flex text-xs items-center justify-center border border-white border-opacity-20 text-cream-foreground hover:bg-primary transition-all duration-500">
-                                    <i class="fa-brands fa-pinterest-p"></i>
+                                    <i class="fa-brands fa-pinterest-p whitespace-nowrap hover:text-purple-700"></i>
                                 </a>
                             </li>
                         </ul>
@@ -834,7 +838,7 @@
         <div
             class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-8 text-center px-4 animate__animated animate__zoomIn animate__delay-1s">
             <!-- Item 1 -->
-            <div class="flex items-center border-r-2 border-white pr-10 hover:scale-110 transition-all duration-300">
+            <div class="flex items-center pr-10 hover:scale-110 transition-all duration-300">
                 <i class="fas fa-plane text-2xl mb-0 text-white transition-all duration-300 hover:text-yellow-300"></i>
                 <div class="ml-4">
                     <p class="text-sm font-bold text-white hover:text-yellow-300">
@@ -845,7 +849,7 @@
             </div>
 
             <!-- Item 2 -->
-            <div class="flex items-center border-r-2 border-white pr-10 hover:scale-110 transition-all duration-300">
+            <div class="flex items-center pr-10 hover:scale-110 transition-all duration-300">
                 <i
                     class="fas fa-headphones-alt text-2xl mb-0 text-white transition-all duration-300 hover:text-yellow-300"></i>
                 <div class="ml-4">
@@ -857,7 +861,7 @@
             </div>
 
             <!-- Item 3 -->
-            <div class="flex items-center border-r-2 border-white pr-10 hover:scale-110 transition-all duration-300">
+            <div class="flex items-center pr-10 hover:scale-110 transition-all duration-300">
                 <i
                     class="fas fa-exchange-alt text-2xl mb-0 text-white transition-all duration-300 hover:text-yellow-300"></i>
                 <div class="ml-4">
@@ -869,13 +873,13 @@
             </div>
 
             <!-- Item 4 -->
-            <div class="flex items-center border-r-2 border-white pr-10 hover:scale-110 transition-all duration-300">
+            <div class="flex items-center pr-10 hover:scale-110 transition-all duration-300">
                 <i class="fas fa-tags text-2xl mb-0 text-white transition-all duration-300 hover:text-yellow-300"></i>
                 <div class="ml-4">
                     <p class="text-sm font-bold text-white hover:text-yellow-300">
                         Many
                     </p>
-                    <p class="text-sm text-white hover:text-yellow-300">Brands</p>
+                    <p class="text-sm text-white hover:text-yellow-300">Brand god</p>
                 </div>
             </div>
         </div>
@@ -885,7 +889,7 @@
     <footer class="bg-black text-gray-300 text-sm">
         <div class="max-w-7xl mx-auto px-4 py-8">
             <!-- Top -->
-            <div class="flex flex-col md:flex-row justify-between items-center border-b border-gray-700 pb-6">
+            <div class="flex flex-col md:flex-row justify-between items-center border-b-0 border-gray-700 pb-6">
                 <div class="flex items-center space-x-4">
                     <img src="/img/files/footer-logo_400x_10a45027-2bea-4763-a52f-4a341e855e9e_x70@2x.png"
                         alt="ShoeZone" class="h-10 align-top mt-[-5px] w 20 h 20 transform scale-175" />
@@ -942,7 +946,7 @@
             <!-- Middle -->
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 py-8">
                 <!-- Contact -->
-                <div>
+                <div class="footer-col">
                     <h3
                         class="text-2xl text-white font-semibold mb-4 text-white hover:text-purple-600 transition-colors duration-300">
                         Contact us
@@ -958,7 +962,7 @@
                 </div>
 
                 <!-- Info -->
-                <div>
+                <div class="footer-col">
                     <h3
                         class="text-2xl text-white font-semibold mb-4 hover:text-purple-600 transition-colors duration-300">
                         Info
@@ -984,7 +988,7 @@
                 </div>
 
                 <!-- Help -->
-                <div>
+                <div class="footer-col">
                     <h3
                         class="text-2xl text-white font-semibold mb-4 text-white hover:text-purple-600 transition-colors duration-300">
                         Help
@@ -1009,7 +1013,7 @@
                 </div>
 
                 <!-- Support -->
-                <div>
+                <div class="footer-col">
                     <h3
                         class="text-2xl text-white font-semibold mb-4 text-white hover:text-purple-600 transition-colors duration-300">
                         Support
@@ -1036,17 +1040,17 @@
             </div>
 
             <!-- Bottom -->
-            <div class="border-t border-gray-700 pt-4 text-center text-gray-400 ">
+            <div class="border-t-0 border-gray-700 pt-4 text-center text-gray-400 ">
                 <div
-                    class="flex flex-col sm:flex-row justify-center items-center sm:gap-8 gap-10 text-center text-sm sm:text-base px-4">
+                    class="footer-col flex flex-col sm:flex-row justify-center items-center sm:gap-8 gap-10 text-center text-sm sm:text-base px-4">
                     <p class="mb-1 sm:mb-2 hover:text-purple-600 transition-colors duration-300">
-                        Search Terms <span class="hidden sm:inline">|</span>
+                        Search Terms <span class="hidden sm:inline"></span>
                     </p>
                     <p class="mb-1 sm:mb-2 hover:text-purple-600 transition-colors duration-300">
-                        Advanced Search <span class="hidden sm:inline">|</span>
+                        Advanced Search <span class="hidden sm:inline"></span>
                     </p>
                     <p class="mb-1 sm:mb-2 hover:text-purple-600 transition-colors duration-300">
-                        Orders and Returns <span class="hidden sm:inline">|</span>
+                        Orders and Returns <span class="hidden sm:inline"></span>
                     </p>
                     <p class="mb-1 sm:mb-2 hover:text-purple-600 transition-colors duration-300">
                         Consultant <span class="hidden sm:inline">|</span>
